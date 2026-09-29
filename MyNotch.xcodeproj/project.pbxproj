@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		95873500306C3D6400BFE037 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 958734FF306C3D6400BFE037 /* Sparkle */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		95CC166B306C25930001E83A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		95CC1674306C25930001E83A /* MyNotchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNotchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		957DAA0A306C392C00A9FCC8 /* Exceptions for "MyNotch" folder in "MyNotch" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 95CC165C306C25910001E83A /* MyNotch */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		95CC165F306C25910001E83A /* MyNotch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				957DAA0A306C392C00A9FCC8 /* Exceptions for "MyNotch" folder in "MyNotch" target */,
+			);
 			path = MyNotch;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95873500306C3D6400BFE037 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		958734FE306C3D6400BFE037 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95CC1654306C25910001E83A = {
 			isa = PBXGroup;
 			children = (
 				95CC165F306C25910001E83A /* MyNotch */,
 				95CC166D306C25930001E83A /* MyNotchTests */,
 				95CC1677306C25930001E83A /* MyNotchUITests */,
+				958734FE306C3D6400BFE037 /* Frameworks */,
 				95CC165E306C25910001E83A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +138,7 @@
 			);
 			name = MyNotch;
 			packageProductDependencies = (
+				958734FF306C3D6400BFE037 /* Sparkle */,
 			);
 			productName = MyNotch;
 			productReference = 95CC165D306C25910001E83A /* MyNotch.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = 95CC1654306C25910001E83A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				956C77D8306C302900FC3BF6 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 95CC165E306C25910001E83A /* Products */;
 			projectDirPath = "";
@@ -394,15 +424,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8GZ6AP6X77;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyNotch/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "MyNotch controls Spotify playback (play, pause, next, previous) and reads the current track's artwork.";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "MyNotch shows a live activity when a Bluetooth device such as AirPods connects or disconnects.";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "The Calendar widget and live activity show your upcoming events.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The Mirror widget shows your front camera while the notch is open.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -426,15 +465,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8GZ6AP6X77;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyNotch/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "MyNotch controls Spotify playback (play, pause, next, previous) and reads the current track's artwork.";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "MyNotch shows a live activity when a Bluetooth device such as AirPods connects or disconnects.";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "The Calendar widget and live activity show your upcoming events.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "The Mirror widget shows your front camera while the notch is open.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		956C77D8306C302900FC3BF6 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		958734FF306C3D6400BFE037 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 956C77D8306C302900FC3BF6 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95CC1655306C25910001E83A /* Project object */;
 }

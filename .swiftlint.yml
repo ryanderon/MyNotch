@@ -1,0 +1,29 @@
+included:
+  - MyNotch
+  - MyNotchTests
+
+opt_in_rules:
+  - force_unwrapping
+
+function_body_length:
+  warning: 20
+  error: 40
+function_parameter_count:
+  warning: 3
+  error: 5
+type_body_length:
+  warning: 150
+  error: 250
+file_length:
+  warning: 250
+  error: 400
+cyclomatic_complexity:
+  warning: 8
+  error: 12
+line_length:
+  warning: 120
+  error: 160
+force_cast: error
+force_try: error
+force_unwrapping: error
+todo: warning
